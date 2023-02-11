@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #444;
+}
+a {
+  color: #50a;
+  text-decoration: none;
+}
+nav {
+  border-top: 2px solid #50a;
+  border-bottom: 1px solid #ddd;
+  background-color: #fcfcfc;
+}
+nav > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  text-align: center;
+  flex: 0 1 auto;
+}
+nav li a {
+  display: block;
+  padding: 16px 32px;
+  text-decoration: none;
+  color: #606c76;
+  font-size: 1em;
+}
+#page-title {
+  font-weight: 300;
+  color: #606c76;
+  margin-bottom: 50px;
+}
+a.active,
+a:hover {
+  color: #50a;
+}
+#container {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  justify-content: center;
+  min-height: 80vh;
+}
+aside {
+  flex: 1 1 200px;
+  border-right: 1px solid #eee;
+  text-align: center;
+}
+aside h2,
+aside h4,
+aside h6 {
+  font-weight: 200;
+  margin: 0;
+}
+aside h4 {
+  margin-top: 5px;
+}
+aside h6 {
+  margin-top: 10px;
+}
+aside h6 a {
+  font-size: 1em;
+  font-weight: 400;
+}
+#content {
+  flex: 1 1 500px;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 800px) {
+  #page-title {
+    text-align: center;
+  }
+  #container {
+    flex-wrap: wrap;
+  }
+  #content {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+  }
+  aside {
+    border-right: 0;
+  }
+}
+#avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #eee;
+  object-fit: cover;
+}
+footer {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.7em;
+}
+.skill-container {
+  display: flex;
+  flex-direction: column;
+}
+.skill-header {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+progress {
+  width: 100%;
+  height: 30px;
+}
+#education-container {
+  display: flex;
+  flex-direction: column;
+}
+.education-line {
+  display: flex;
+}
+.education-line h3 {
+  margin: 0;
+  padding-bottom: 4px;
+}
+.education-line-left,
+.education-line-right {
+  display: flex;
+}
+.education-line-left {
+  flex: 1;
+  text-align: left;
+}
+#credentials {
+  margin-top: 100px;
+  color: #969696;
+}
+.university,
+.location {
+  font-size: 0.9em;
+  color: #555;
+}
+#interests-list {
+  list-style: none;
+  padding-left: 0;
+}
+#interests-list li {
+  padding: 10px 0;
+}
